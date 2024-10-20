@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Země, město</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Země, město</h1>
+
+    <div class="settings-icon" id="settings-icon">⚙️</div>
+
+    <div class="dropdown" id="dropdown">
+        <label for="set-select">Výběr sady:</label>
+        <select id="set-select">
+            <option value="cs">Česká sada</option>
+            <option value="en">Anglická sada</option>
+            <option value="custom">Vytvořit vlastní sadu</option>
+        </select>
+    </div>
+
+    <button id="toggle-custom-set" style="display: none;">🔽 Zobrazit vlastní písmena</button>
+    
+    <div id="custom-letter-set-container">
+        <label>Přidej písmena do vlastní sady:</label><br>
+        <div id="custom-letter-set">
+            <span class="letter inactive" data-letter="A">A</span>
+            <span class="letter inactive" data-letter="B">B</span>
+            <span class="letter inactive" data-letter="C">C</span>
+            <span class="letter inactive" data-letter="D">D</span>
+            <span class="letter inactive" data-letter="E">E</span>
+            <span class="letter inactive" data-letter="F">F</span>
+            <span class="letter inactive" data-letter="G">G</span>
+            <span class="letter inactive" data-letter="H">H</span>
+            <span class="letter inactive" data-letter="I">I</span>
+            <span class="letter inactive" data-letter="J">J</span>
+            <span class="letter inactive" data-letter="K">K</span>
+            <span class="letter inactive" data-letter="L">L</span>
+            <span class="letter inactive" data-letter="M">M</span>
+            <span class="letter inactive" data-letter="N">N</span>
+            <span class="letter inactive" data-letter="O">O</span>
+            <span class="letter inactive" data-letter="P">P</span>
+            <span class="letter inactive" data-letter="Q">Q</span>
+            <span class="letter inactive" data-letter="R">R</span>
+            <span class="letter inactive" data-letter="S">S</span>
+            <span class="letter inactive" data-letter="T">T</span>
+            <span class="letter inactive" data-letter="U">U</span>
+            <span class="letter inactive" data-letter="V">V</span>
+            <span class="letter inactive" data-letter="W">W</span>
+            <span class="letter inactive" data-letter="X">X</span>
+            <span class="letter inactive" data-letter="Y">Y</span>
+            <span class="letter inactive" data-letter="Z">Z</span>
+            <span class="letter inactive" data-letter="Á">Á</span>
+            <span class="letter inactive" data-letter="Č">Č</span>
+            <span class="letter inactive" data-letter="Ď">Ď</span>
+            <span class="letter inactive" data-letter="É">É</span>
+            <span class="letter inactive" data-letter="Ň">Ň</span>
+            <span class="letter inactive" data-letter="Ó">Ó</span>
+            <span class="letter inactive" data-letter="Ř">Ř</span>
+            <span class="letter inactive" data-letter="Š">Š</span>
+            <span class="letter inactive" data-letter="Ť">Ť</span>
+            <span class="letter inactive" data-letter="Ú">Ú</span>
+            <span class="letter inactive" data-letter="Ý">Ý</span>
+        </div>
+    </div>
+
+    <button id="generate">Generovat písmeno</button>
+    
+    <div id="loading">
+        <div class="spinner"></div>
+    </div>
+
+    <div id="random-letter"></div>
+    
+    <div id="info-window"></div>
+
+    <audio id="letter-audio" src="" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
